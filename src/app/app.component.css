@@ -1,0 +1,22 @@
+.mat-raised-button {
+  line-height: 20px;
+}
+
+button, h2 {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+.vertical-align {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
