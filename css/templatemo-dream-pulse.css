@@ -12,7 +12,7 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   color: #707172;
-  background-color: #666;
+  background-color: white;
 }
 
 p {
@@ -36,6 +36,10 @@ a {
   color: #069;
 }
 
+.tm-secondary-primary {
+  color: #69a053;
+}
+
 .tm-color-gray {
   color: #333;
 }
@@ -45,7 +49,7 @@ a {
 }
 
 .tm-bg-white-transparent {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.7);
   border: 1px solid white;
 }
 
@@ -55,6 +59,8 @@ a {
   padding: 55px;
   margin-right: 0;
   margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .tm-section-title {
@@ -68,10 +74,9 @@ a {
 
 .tm-section {
   display: flex;
-  align-items: center;
   height: auto;
+  width: 100%;
   max-width: 1275px;
-  padding: 66px 60px;
 }
 
 #intro {
@@ -93,17 +98,6 @@ a {
   margin: 70px auto 90px;
 }
 
-.tm-double-border-1,
-.tm-double-border-2 {
-  border: 1px solid #fff;
-  position: relative;
-}
-
-.tm-double-border-2 {
-  top: 10px;
-  left: 10px;
-}
-
 .tm-border-gray {
   border-color: #cdcecf;
 }
@@ -118,22 +112,24 @@ a {
 
 .tm-sidebar {
   position: fixed;
-  top: 0;
-  bottom: 0;
+  height: 100%;
   left: 0;
   z-index: 100;
-  padding-left: 70px;
-  padding-right: 70px;
   width: 400px;
   max-width: 400px;
 }
 
+
 /* Hide scrollbar */
+
 .tm-sidebar {
   overflow-y: scroll;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE 10+ */
 }
+
 .tm-sidebar::-webkit-scrollbar {
   /* WebKit */
   width: 0;
@@ -153,7 +149,7 @@ a {
   margin-right: 0;
 }
 
-.tm-main-nav > li > a {
+.tm-main-nav>li>a {
   color: white;
 }
 
@@ -185,22 +181,7 @@ a {
 }
 
 .tm-main-nav .nav-link:hover {
-  animation-name: blinker;
-  animation-duration: 0.5s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
-
-@keyframes blinker {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 1;
-  }
+  color: #5a9852;
 }
 
 .tm-social-links {
@@ -247,6 +228,7 @@ a {
   align-items: center;
   justify-content: center;
 }
+
 
 /* Our Work */
 
@@ -305,12 +287,15 @@ a {
   opacity: 1;
 }
 
+
 /* 
   Gallery Item Hover Effect
   https://tympanus.net/codrops/2014/06/19/ideas-for-subtle-hover-effects/
 */
 
+
 /* Common style */
+
 .tm-gallery-item figure {
   position: relative;
   float: left;
@@ -344,7 +329,7 @@ a {
 }
 
 .tm-gallery-item figure figcaption,
-.tm-gallery-item figure figcaption > a {
+.tm-gallery-item figure figcaption>a {
   position: absolute;
   top: 0;
   left: 0;
@@ -355,9 +340,13 @@ a {
   justify-content: center;
 }
 
+
 /* Anchor will cover the whole item by default */
+
+
 /* For some effects it will show as a button */
-.tm-gallery-item figure figcaption > a {
+
+.tm-gallery-item figure figcaption>a {
   z-index: 1000;
   text-indent: 200%;
   white-space: nowrap;
@@ -384,8 +373,13 @@ a {
   font-size: 68.5%;
 }
 
+
 /*---------------*/
+
+
 /***** Bubba *****/
+
+
 /*---------------*/
 
 figure.effect-bubba {
@@ -463,7 +457,9 @@ figure.effect-bubba:hover p {
   transform: translate3d(0, 0, 0);
 }
 
+
 /* Clients */
+
 .tm-section-pad {
   padding-left: 50px;
   padding-right: 50px;
@@ -550,20 +546,17 @@ figure.effect-bubba:hover p {
 
 @media (max-width: 1600px) {
   .tm-sidebar {
-    width: 30%;
+    width: 20%;
     max-width: none;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
-
   .tm-social-link {
     margin: 5px;
   }
-
   .tm-section-wrap {
-    width: 70%;
+    width: 80%;
   }
-
   .tm-img-wrap a {
     width: 100%;
     height: 100%;
@@ -578,37 +571,30 @@ figure.effect-bubba:hover p {
   .tm-bg-black-transparent {
     background-color: rgba(0, 0, 0, 0.5);
   }
-
   .tm-brand-box {
     margin-top: 30px;
     margin-bottom: 30px;
     max-width: 200px;
     min-height: 100px;
   }
-
   .tm-brand {
     padding: 20px 30px;
   }
-
   .tm-main-nav {
     margin-bottom: 60px;
   }
-
   .tm-social-links {
     margin-bottom: 30px;
   }
-
   footer p {
     line-height: 1;
   }
-
   .tm-sidebar {
     width: 250px;
     left: -250px;
     padding: 15px;
     transition: all 0.3s ease;
   }
-
   .navbar-toggler {
     display: block;
     position: fixed;
@@ -623,32 +609,26 @@ figure.effect-bubba:hover p {
     border-bottom-right-radius: 5px;
     top: 5px;
   }
-
   .navbar-toggler:focus {
     outline: none;
   }
-
   .tm-sidebar.show {
     left: 0;
   }
-
   .tm-sidebar.show .navbar-toggler {
     left: 250px;
   }
-
   .tm-section-wrap {
     width: 100%;
   }
-
   figure.effect-bubba h2 {
     font-size: 1.1rem;
     margin-bottom: 25px;
   }
-
   .tm-gallery-item figure p {
     font-size: 63%;
     padding: 0;
-    line-height: 1.5;
+    line-height: 2;
   }
 }
 
@@ -668,7 +648,6 @@ figure.effect-bubba:hover p {
   .slick-dots {
     bottom: -40px;
   }
-
   .tm-box-pad {
     padding: 50px 30px;
   }
